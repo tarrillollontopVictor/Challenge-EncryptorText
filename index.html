@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALLENGE-ENCRIPTADOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-mode">
+
+    <header class="header">
+        <img id="logo" class="header__img" src="Img/logo_ALura.png" alt="Logo Alura">
+        <div class="header__dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle" class="header__toggle-input">
+            <label for="darkModeToggle" class="header__toggle-label"></label>
+        </div>
+    </header>
+    
+    <main>
+        <section class="container">
+
+            <div class="container__input-section">
+                <textarea id="inputText" placeholder="Ingresar el texto aquí"></textarea>
+                <div class="container__info">
+                    <img class="container__info-img" src="Img/advertence.png" alt="Advertencia">
+                    <p class="container__info-warning">No se permiten minúsculas ni acentos</p>
+                </div>
+                <div class="container__buttons">
+                    <button id="encryptBtn">Encriptar</button>
+                    <button id="decryptBtn">Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="container__output-section">
+                <div id="outputContent">
+                    <p id="main-response-text">Ningún texto fue encontrado</p>
+                    <p id="secondary-response-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button id="copyBtn" style="display: none;">Copiar</button>
+                <img id="outputContent-img" src="Img/FrontPage.png" alt="Front Page Icon">
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text"> &copy Creado por <span>Victor Manuel</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
